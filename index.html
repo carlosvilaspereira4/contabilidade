@@ -40,8 +40,8 @@ function App() {
   const [previewReceipt, setPreviewReceipt] = useState(null);
   const [formData, setFormData] = useState({user:'',type:'despesa',date:new Date().toISOString().split('T')[0],amount:'',description:'',category:'',receipt:null,isPaid:false});
   const [filters, setFilters] = useState({startDate:'',endDate:'',type:'',user:'',category:''});
-  const users = ['Ana Rodrigues','André Gomes','Beatriz Sousa','Bruno Dias','Carlos Mendes','Catarina Lopes','Francisca Duarte','Inês Martins','João Silva','Joana Ribeiro','Maria Santos','Mariana Carvalho','Miguel Ferreira','Nuno Pinto','Pedro Costa','Ricardo Oliveira','Rui Moreira','Sofia Alves','Teresa Vieira','Tiago Pereira'];
-  const categories = ['Alimentação','Transporte','Equipamento','Instalações','Arbitragem','Inscrições','Material Desportivo','Publicidade','Eventos','Quotas','Donativos','Outros'];
+  const users = ['Ana Glória','Cala','Carlos','Catarina','Chipi','Daniela','Diogo','Júlio Dinis','Marcelo','Margarida','Maria João','Mariana','Né','Patrícia','Paulo','Pedro','Ricardo Jorge','Ricardo Russo','Sara','Tó-Pé','Toninho'];
+  const categories = ['Alimentação','Bar','Bilheteira','Donativo','Deslocações e Portagens','Gastos Operacionais','Gastos com Pessoal','Lavandaria','Material de Fisioterapia','Material de Treino e Jogo','Merchandising - Camisola de Jogo','Merchandising - Cachecol','Merchandising - Sweat','Merchndising - T-shirt','Obras, Equipamentos e Manutenções','Patrocínios','Rendas, Luz Água e Gás','Rifas','Saúde','Serviços Externos','Sócio Individual Adulto','Sócio Individual Juvenil','Sócio Individual Criança','Sócios Pack Família','Outros'];
 
   const loadTransactions = async () => {
     setLoading(true);
